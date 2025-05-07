@@ -1,10 +1,149 @@
 <?php
  /**
-  * ENPHO Gallery
-  * Author: Shichen Wanyan
-  * Project: https://enpho.aurorum.co/projects/gallery
-  * Lisence: GNU v.3
+  * "ENPHO Gallery" <br/> "aaa"
+  * @package Gallery
+  * @author "nowfox, chris62283, Hatsune's Husband"
+  * @link https://enpho.aurorum.co/projects/gallery
   */
 ?>
 
-<DOCTYPE 
+<!DOCTYPE html>
+<meta charset="utf-8"./>
+<html>
+  <head>
+  <title><?php $this->archiveTitle(array('category' => '分类 %s 下的文章', 'search' => '包含关键字 %s 的文章', 'tag' => '标签 %s 下的文章', 'author' => '%s 发布的文章'), '', ' - '); ?><?php $this->options->title(); ?></title>
+  <!-- <title>ENPHO Gallery</title>
+  <script src="usr\themes\Gallery\assets\photoswipe-lightbox.esm.js"></script>
+  <script src="usr\themes\Gallery\assets\photoswipe-lightbox.esm.js.map"></script>
+  <script src="usr\themes\Gallery\assets\photoswipe-lightbox.esm.min.js"></script>
+  <script src="usr\themes\Gallery\assets\photoswipe.esm.js"></script>
+  <script src="usr/themes/Gallery/assets/photoswipe.esm.min.js"></script>
+  <link href="usr\themes\Gallery\assets\photoswipe.css" rel = "stylesheet"/> -->
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\assets\css\header.css">
+
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .gallery {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+    
+  }
+
+  .gallery a {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .gallery img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.02);
+  }
+</style>
+  </head>
+  <body>
+  <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img style="width:150px" src="https://showcase.aurorum.co/tools/tracker/track.php/icon.jpg"/></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a target="_blank" href="index.html">HOME</a></li>
+                        <li><a target="_blank" href="biology.html">Biology</a></li>
+                        <li><a target="_blank" href="curiosity.html">Curiosity</a></li>
+                        <li class="dropdown">
+                            <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Common Natures<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" href="dforh.html">Desire for a "Home"</a></li>
+                                <li><a target="_blank" href="sociality.html">Sociality</a></li>
+                                <li><a target="_blank" href="dofc.html">Desire of Control</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><i class="fa-solid fa-scroll"></i> <a target="_blank" class="text-white" href="essay.html">MP1 essay</a></li>
+                                <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="credits.html">References/Credits</a></li>
+                                <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="sitemap.html">Sitemap</a></li>
+                                <li><a target="_blank" class="text-white" href="poster.html">The Whole Poster</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>Humans are Animals</h1>
+            <p style="margin-bottom: 60px;">A project showcase website by Shichen Wanyan, explaining the idea that humans are still a kind of Animal.</p>
+            <div class="btn btn-primary"><a target="_blank" style="color: aliceblue; font-size: 26px; font-weight: bolder;" href="#intro">  Click for  <br/>  Brief Intro  <br/> ↓ </a></div>
+        </div>
+    </div>
+
+  <div class="gallery" id="gallery">
+  <a href="https://source.unsplash.com/random/800x600" 
+     data-pswp-width="800" 
+     data-pswp-height="600" 
+     target="_blank">
+    <img src="usr\themes\Gallery\Snow_Fox.jpg" alt="Image 1" />
+  </a>
+  <a href="https://source.unsplash.com/random/800x500" 
+     data-pswp-width="800" 
+     data-pswp-height="500" 
+     target="_blank">
+    <img src="usr\themes\Gallery\Snow_Fox2.jpg" alt="Image 2" />
+  </a>
+  <a href="https://source.unsplash.com/random/800x700" 
+     data-pswp-width="800" 
+     data-pswp-height="700" 
+     target="_blank">
+    <img src="usr\themes\Gallery\Snow_Fox3.jpg" alt="Image 3" />
+  </a>
+  <!-- Add more images similarly -->
+</div>
+
+<!-- PhotoSwipe Root -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+<!-- PhotoSwipe Script -->
+<script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+  });
+
+  lightbox.init();
+</script>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+<footer>
+    <iframe style="width: 100%;height:60vh;" src="usr\themes\Gallery\footer.html"></iframe>
+</footer>
+</html> 
