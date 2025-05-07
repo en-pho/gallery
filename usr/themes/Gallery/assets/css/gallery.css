@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .gallery {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+    
+  }
+
+  .gallery a {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .gallery img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.02);
+  }

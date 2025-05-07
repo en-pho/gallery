@@ -2,15 +2,17 @@
  /**
   * "ENPHO Gallery" <br/> "aaa"
   * @package Gallery
-  * @author "nowfox, chris62283, Hatsune's Husband"
+  * @author "Aurorum, chris62283, Hatsune's Husband"
   * @link https://enpho.aurorum.co/projects/gallery
+  * @version 0.0.1.alpha
   */
 ?>
 
 <!DOCTYPE html>
 <meta charset="utf-8"./>
 <html>
-  <head>
+
+<head>
   <title><?php $this->archiveTitle(array('category' => '分类 %s 下的文章', 'search' => '包含关键字 %s 的文章', 'tag' => '标签 %s 下的文章', 'author' => '%s 发布的文章'), '', ' - '); ?><?php $this->options->title(); ?></title>
   <!-- <title>ENPHO Gallery</title>
   <script src="usr\themes\Gallery\assets\photoswipe-lightbox.esm.js"></script>
@@ -21,41 +23,12 @@
   <link href="usr\themes\Gallery\assets\photoswipe.css" rel = "stylesheet"/> -->
 <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\assets\css\header.css">
+<link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\css\header.css">
+<link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\css\gallery.css">
 
-<style>
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
+</head>
 
-  .gallery {
-    column-count: 3;
-    column-gap: 10px;
-    padding: 10px;
-    
-  }
-
-  .gallery a {
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 80%;
-  }
-
-  .gallery img {
-    width: 80%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    transition: transform 0.2s;
-  }
-
-  .gallery img:hover {
-    transform: scale(1.02);
-  }
-</style>
-  </head>
-  <body>
+<body>
   <div class="header">
         <nav class="navbar navbar-default">
             <div class="container">
@@ -105,19 +78,19 @@
      data-pswp-width="800" 
      data-pswp-height="600" 
      target="_blank">
-    <img src="usr\themes\Gallery\Snow_Fox.jpg" alt="Image 1" />
+    <img src="usr\themes\Gallery\dev\Snow_Fox.jpg" alt="Image 1" />
   </a>
   <a href="https://source.unsplash.com/random/800x500" 
      data-pswp-width="800" 
      data-pswp-height="500" 
      target="_blank">
-    <img src="usr\themes\Gallery\Snow_Fox2.jpg" alt="Image 2" />
+    <img src="usr\themes\Gallery\dev\Snow_Fox2.jpg" alt="Image 2" />
   </a>
   <a href="https://source.unsplash.com/random/800x700" 
      data-pswp-width="800" 
      data-pswp-height="700" 
      target="_blank">
-    <img src="usr\themes\Gallery\Snow_Fox3.jpg" alt="Image 3" />
+    <img src="usr\themes\Gallery\dev\Snow_Fox3.jpg" alt="Image 3" />
   </a>
   <!-- Add more images similarly -->
 </div>
@@ -140,10 +113,11 @@
 
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 <footer>
-    <iframe style="width: 100%;height:60vh;" src="usr\themes\Gallery\footer.html"></iframe>
+    <?php include 'usr/themes/Gallery/parts/footer.php'; ?>
 </footer>
 </html> 
