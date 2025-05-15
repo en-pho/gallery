@@ -9,7 +9,6 @@
 ?>
 
 <!DOCTYPE html>
-<meta charset="utf-8"./>
 <html>
 
 <head>
@@ -118,6 +117,6 @@
 </body>
 
 <footer>
-    <?php include 'usr/themes/Gallery/parts/footer.php'; ?>
+    <iframe style="width: 100%;height:60vh;" src="usr/themes/Gallery/parts/footer.php"></iframe>
 </footer>
 </html> 
