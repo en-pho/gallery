@@ -96,7 +96,7 @@
   <?php
      $file_names = ["Snow_Fox1", "Snow_Fox2", "Snow_Fox3"];
      $count = 0
-     foreach ($file_name as $item) : ?>
+     foreach ($file_names as $item) : ?>
            <a href="https://source.unsplash.com/random/800x500" 
            data-pswp-width="800" 
            data-pswp-height="500" 
