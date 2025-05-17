@@ -12,6 +12,8 @@
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?php $this->archiveTitle(array('category' => '分类 %s 下的文章', 'search' => '包含关键字 %s 的文章', 'tag' => '标签 %s 下的文章', 'author' => '%s 发布的文章'), '', ' - '); ?><?php $this->options->title(); ?></title>
   <!-- <title>ENPHO Gallery</title>
   <script src="usr\themes\Gallery\assets\photoswipe-lightbox.esm.js"></script>
@@ -24,6 +26,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\css\header.css">
 <link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\css\gallery.css">
+<link rel="stylesheet" type="text/css" href="usr\themes\Gallery\assets\css\slides.css">
 
 </head>
 
@@ -31,7 +34,8 @@
   <div class="header">
         <nav class="navbar navbar-default">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img style="width:150px" src="https://showcase.aurorum.co/tools/tracker/track.php/icon.jpg"/></a>
+                <h1 class="navbar-brand">Hello</h1>
+                <!--<a class="navbar-brand" href="index.html"><img style="width:150px" src="https://showcase.aurorum.co/tools/tracker/track.php/icon.jpg"/></a>-->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -65,11 +69,7 @@
                 </div>
             </div>
         </nav>
-        <div class="hero">
-            <h1>Humans are Animals</h1>
-            <p style="margin-bottom: 60px;">A project showcase website by Shichen Wanyan, explaining the idea that humans are still a kind of Animal.</p>
-            <div class="btn btn-primary"><a target="_blank" style="color: aliceblue; font-size: 26px; font-weight: bolder;" href="#intro">  Click for  <br/>  Brief Intro  <br/> ↓ </a></div>
-        </div>
+        <?php include 'usr/themes/Gallery/parts/slides.php'; ?>
     </div>
 
   <div class="gallery" id="gallery">
