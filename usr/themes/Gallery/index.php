@@ -120,3 +120,5 @@
     <iframe style="width: 100%;height:60vh;" src="usr/themes/Gallery/parts/footer.php"></iframe>
 </footer>
 </html> 
+
+
