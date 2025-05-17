@@ -59,29 +59,7 @@
                     <p><i class="fa-solid fa-user"></i> Shichen Wanyan </p>
                     <p><i class="fas fa-envelope mr-3"></i> aurorum@uw.edu </p>
                 </div>
-
-                 <!-- Grid column: About this website -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">About this organization </h6>
-                    <p>
-                        This club focuses on analyzing photography through engineers' approaches.<br>
-                        The club president is Shichen Wanyan.<br>
-                        Our new project Gallery gathers various images for our users to search for. The massive<br>
-                        amount of picture resources can become your powerful tool to obtain pictures by simply<br>
-                        searching for the keywords you want. Enjoy your wonderful journey using Gallery!
-                    </p>
-                </div>
-                
-                <!-- Grid column: Club Info-->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Organization</h6>
-                    <p><i class="fa-solid fa-user"></i> Engineering in Photographer's Approach </p>
-                    <p><a target="_blank" class="text-white" href="galary.html"> ENPHO Gallery </a></p>
-                    <p><a target="_blank" class="text-white" href="index.html"> ENPHO Homepage </a></p>
-                    <p><a target="_blank" class="text-white" href="sitemap.html"> ENPHO SiteMap </a></p>
-                    <p><i class="fas fa-envelope mr-3"></i> aurorum@uw.edu </p>
-                </div>
-                
+                <!-- Grid column -->
             </div>
             <!--Grid row-->
         </section>
