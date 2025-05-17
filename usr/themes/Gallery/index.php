@@ -73,7 +73,7 @@
     </div>
 
   <div class="gallery" id="gallery">
-<!--   <a href="https://source.unsplash.com/random/800x600" 
+  <a href="https://source.unsplash.com/random/800x600" 
      data-pswp-width="800" 
      data-pswp-height="600" 
      target="_blank">
@@ -90,10 +90,10 @@
      data-pswp-height="700" 
      target="_blank">
     <img src="usr\themes\Gallery\dev\Snow_Fox3.jpg" alt="Image 3" />
-  </a> -->
+  </a>
   <!-- Add more images similarly -->
 <!--    Line 94: That's not smart -->
-  <?php
+<!--   <?php
      $file_names = ["Snow_Fox1", "Snow_Fox2", "Snow_Fox3"];
      $count = 0
      foreach ($file_names as $item) : ?>
@@ -106,7 +106,7 @@
                  $count = $count + 1?>
            <img src= "<?php echo _getThumbnails($item); ?>" alt="<?php echo $count?>" />
            </a>
-  <?php endforeach; ?>
+  <?php endforeach; ?> -->
 </div>
 
 <!-- PhotoSwipe Root -->
