@@ -94,6 +94,26 @@
   <!-- Add more images similarly -->
 </div>
 
+<?php while($this->next()): ?>
+  <article>
+    <h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+
+    <?php
+      $thumbs = _getThumbnails($this);
+      if (!empty($thumbs)) {
+          echo '<div class="post-thumbnails">';
+          foreach ($thumbs as $thumb) {
+              echo '<img src="' . $thumb . '" alt="Thumbnail" style="max-width: 100px; margin-right: 5px;">';
+          }
+          echo '</div>';
+      }
+    ?>
+    
+    <p><?php $this->excerpt(100, '...'); ?></p>
+  </article>
+<?php endwhile; ?>
+  
+
 <!-- PhotoSwipe Root -->
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
