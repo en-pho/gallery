@@ -36,20 +36,22 @@ function _getThumbnails($item)
     foreach ($thumbUrl[1] as $list) $result[] = $list;
   }
 
-  if (sizeof($result) < 3) {
-    $custom_thumbnail = Helper::options()->JThumbnail;
-    if ($custom_thumbnail) {
-      $custom_thumbnail_arr = explode("\r\n", $custom_thumbnail);
-      for ($i = 0; $i < 3; $i++) {
-        $result[] = $custom_thumbnail_arr[array_rand($custom_thumbnail_arr, 1)] . "?key=" . mt_rand(0, 1000000);
-      }
-    } else {
-      for ($i = 0; $i < 3; $i++) {
-        $result[] = _getAssets('assets/thumb/' . rand(1, 42) . '.jpg', false);
-      }
-    }
-  }
+  // if (sizeof($result) < 3) {
+  //   $custom_thumbnail = Helper::options()->JThumbnail;
+  //   if ($custom_thumbnail) {
+  //     $custom_thumbnail_arr = explode("\r\n", $custom_thumbnail);
+  //     for ($i = 0; $i < 3; $i++) {
+  //       $result[] = $custom_thumbnail_arr[array_rand($custom_thumbnail_arr, 1)] . "?key=" . mt_rand(0, 1000000);
+  //     }
+  //   } else {
+  //     for ($i = 0; $i < 3; $i++) {
+  //       $result[] = _getAssets('assets/thumb/' . rand(1, 42) . '.jpg', false);
+  //     }
+  //   }
+  // }
 
-  return $result;
+    // Only return the first image if it exists
+  return array_slice($result, 0, 1);
+
 }
 ?>
