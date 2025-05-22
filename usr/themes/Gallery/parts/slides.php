@@ -19,7 +19,7 @@
       <img src="https://picsum.photos/id/1019/1200/600" alt="Slide 3" />
       <div class="carousel__slide-content">
         <h2 class="carousel__slide-title">Slide Title 3</h2>
-        <a class="carousel__slide-button" href="#">Learn More</a>
+        <a class="carousel__slide-button" href="#">Learn More...</a>
       </div>
     </div>
   </div>
