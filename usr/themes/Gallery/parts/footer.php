@@ -40,17 +40,6 @@
 
                 <hr class="w-100 clearfix d-md-none" />
 
-                <!-- Grid column: Topic Links -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Topic links</h6>
-                    <p><a target="_blank" class="text-white" href="biology.html">Biological Perspective</a></p>
-                    <p><a target="_blank" class="text-white" href="curiosity.html">Curiosity Perspective</a></p>
-                    <p><a target="_blank" class="text-white" href="dforh.html">Desire for a "Home"</a></p>
-                    <p><a target="_blank" class="text-white" href="sociality.html">Sociality</a></p>
-                    <p><a target="_blank" class="text-white" href="dofc.html">Desire of Control</a></p>
-                </div>
-                <!-- Grid column -->
-
                 <hr class="w-100 clearfix d-md-none" />
 
                 <!-- Grid column: Author Info -->
