@@ -1,3 +1,5 @@
+
+
 <?php
 function _getAssets($assets, $type = true)
 {
