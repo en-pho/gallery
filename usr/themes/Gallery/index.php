@@ -1,5 +1,3 @@
-
-
 <?php
  /**
   * "ENPHO Gallery" <br/> "aaa"
@@ -19,19 +17,20 @@
   <title><?php $this->archiveTitle(array('category' => '分类 %s 下的文章', 'search' => '包含关键字 %s 的文章', 'tag' => '标签 %s 下的文章', 'author' => '%s 发布的文章'), '', ' - '); ?><?php $this->options->title(); ?></title>
   <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="usr/themes/Gallery/assets/css/header.css">
-  <link rel="stylesheet" type="text/css" href="usr/themes/Gallery/assets/css/gallery.css">
-  <link rel="stylesheet" type="text/css" href="usr/themes/Gallery/assets/css/slides.css">
-    <link rel="stylesheet" type="text/css" href="usr/themes/Gallery/assets/css/post-entry.css">
+  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/slides.css">
+    <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/post-entry.css">
 </head>
 
 <body>
   <div class="header">
         <nav class="navbar navbar-default">
             <div class="container">
-                <h1 class="navbar-brand">Hello</h1>
+                <a class="navbar-brand" href="#">Hello</a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -39,6 +38,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
+                      <form class="navbar-form navbar-right" role="search" method="get" action="/search.php">
+                        <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" name="s">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                      </form>
+
                         <li><a target="_blank" href="index.html">HOME</a></li>
                         <li><a target="_blank" href="biology.html">Biology</a></li>
                         <li><a target="_blank" href="curiosity.html">Curiosity</a></li>
@@ -62,7 +68,7 @@
                 </div>
             </div>
         </nav>
-        <?php include 'usr/themes/Gallery/parts/slides.php'; ?>
+      <?php include __DIR__ . '/parts/slides.php'; ?>
     </div>
 
   <div class="gallery" id="gallery">
@@ -106,10 +112,12 @@
   </div>
 <?php endwhile; ?>
   </div>
-
   <!-- PhotoSwipe Root -->
   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
-
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
   <!-- PhotoSwipe Script -->
   <script type="module">
     import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
@@ -123,14 +131,13 @@
     lightbox.init();
   </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <footer>
+      <iframe style="width: 100%;height:60vh;" src="/usr/themes/Gallery/parts/footer.php"></iframe>
+  </footer>
 
 </body>
 
-<footer>
-    <iframe style="width: 100%;height:60vh;" src="usr/themes/Gallery/parts/footer.php"></iframe>
-</footer>
 </html>
 
 
