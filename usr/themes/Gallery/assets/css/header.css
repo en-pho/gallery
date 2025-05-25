@@ -60,9 +60,13 @@ body {
 }
 
 .header .navbar-brand {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    height: 50px;
+    line-height: 20px;
+    /* hard-code fix! beware change later */
 }
+
 
 .header .navbar-brand:hover {
     color: #ccc;
