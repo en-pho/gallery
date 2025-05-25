@@ -17,10 +17,10 @@
   <title><?php $this->archiveTitle(array('category' => '分类 %s 下的文章', 'search' => '包含关键字 %s 的文章', 'tag' => '标签 %s 下的文章', 'author' => '%s 发布的文章'), '', ' - '); ?><?php $this->options->title(); ?></title>
   <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/header.css">
-  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/gallery.css">
-  <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/slides.css">
-    <link rel="stylesheet" type="text/css" href="/usr/themes/Gallery/assets/css/post-entry.css">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/header.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/gallery.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/slides.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/post-entry.css'); ?>">
 </head>
 
 <body>
@@ -133,7 +133,7 @@
 
   
   <footer>
-      <iframe style="width: 100%;height:60vh;" src="/usr/themes/Gallery/parts/footer.php"></iframe>
+      <iframe style="width: 100%;height:60vh;" src="<?php $this->options->themeUrl('parts/footer.php'); ?>"></iframe>
   </footer>
 
 </body>
