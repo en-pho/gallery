@@ -25,51 +25,51 @@
 
 <body>
   <div class="header">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <a class="navbar-brand" href="#">Hello</a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav navbar-right">
-                    <form class="navbar-form navbar-right" role="search" method="get" action="/search.php">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search" name="s">
-                      </div>
-                      <button type="submit" class="btn btn-default">Search</button>
-                    </form>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hello</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form navbar-right" role="search" method="get" action="/search.php">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="s">
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+            </form>
 
-                    <li><a target="_blank" href="index.html">HOME</a></li>
-                    <li><a target="_blank" href="biology.html">Biology</a></li>
-                    <li><a target="_blank" href="curiosity.html">Curiosity</a></li>
-                    <li class="dropdown">
-                        <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Common Natures<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a target="_blank" href="sociality.html">Sociality</a></li>
-                            <li><a target="_blank" href="dofc.html">Desire of Control</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><i class="fa-solid fa-scroll"></i> <a target="_blank" class="text-white" href="essay.html">MP1 essay</a></li>
-                        <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="credits.html">References/Credits</a></li>
-                        <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="sitemap.html">Sitemap</a></li>
-                        <li><a target="_blank" class="text-white" href="poster.html">The Whole Poster</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
-      <?php include __DIR__ . '/parts/slides.php'; ?>
-    </div>
+            <li><a target="_blank" href="index.html">HOME</a></li>
+            <li><a target="_blank" href="biology.html">Biology</a></li>
+            <li><a target="_blank" href="curiosity.html">Curiosity</a></li>
+            <li class="dropdown">
+              <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Common Natures<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a target="_blank" href="sociality.html">Sociality</a></li>
+                <li><a target="_blank" href="dofc.html">Desire of Control</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><i class="fa-solid fa-scroll"></i> <a target="_blank" class="text-white" href="essay.html">MP1 essay</a></li>
+                <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="credits.html">References/Credits</a></li>
+                <li><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="sitemap.html">Sitemap</a></li>
+                <li><a target="_blank" class="text-white" href="poster.html">The Whole Poster</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <?php include __DIR__ . '/parts/slides.php'; ?>
+  </div>
 
   <div class="gallery" id="gallery">
     <!-- Hardcoded images -->
