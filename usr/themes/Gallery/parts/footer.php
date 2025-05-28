@@ -24,23 +24,6 @@
                         The author and copyright holder of this website is Shichen Wanyan, the webmaster of Aurorum.co.
                     </p>
                 </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <!-- Grid column: Page Links -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Page Links</h6>
-                    <p><i class="fas fa-home mr-3"></i> <a target="_blank" class="text-white" href="index.html">Homepage</a></p>
-                    <p><i class="fa-solid fa-scroll"></i> <a target="_blank" class="text-white" href="essay.html">MP1 essay</a></p>
-                    <p><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="credits.html">References/Credits</a></p>
-                    <p><i class="fa-solid fa-sitemap"></i> <a target="_blank" class="text-white" href="sitemap.html">Sitemap</a></p>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <hr class="w-100 clearfix d-md-none" />
 
                 <!-- Grid column: Author Info -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
