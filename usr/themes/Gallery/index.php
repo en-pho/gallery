@@ -2,7 +2,7 @@
  /**
   * "ENPHO Gallery" <br/> "aaa"
   * @package Gallery
-  * @author "Aurorum, chris62283, Hatsune's Husband"
+  * @author "Aurorum, chris62283, Hatsune's Husband Jessy"
   * @link https://enpho.aurorum.co/projects/gallery
   * @version 0.0.1.alpha
   */
@@ -133,7 +133,7 @@
 
   
   <footer>
-      <iframe style="width: 100%;height:60vh;" src="<?php $this->options->themeUrl('parts/footer.php'); ?>"></iframe>
+      <iframe style="width: 100%;height:63vh;" src="<?php $this->options->themeUrl('parts/footer.php'); ?>"></iframe>
   </footer>
 
 </body>
