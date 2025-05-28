@@ -24,8 +24,6 @@
                         The author and copyright holder of this website is Shichen Wanyan, the webmaster of Aurorum.co.
                     </p>
                 </div>
-<<<<<<< HEAD
-=======
                 <!-- Grid column -->
 
                 <hr class="w-100 clearfix d-md-none" />
@@ -43,7 +41,6 @@
                 <hr class="w-100 clearfix d-md-none" />
 
                 <hr class="w-100 clearfix d-md-none" />
->>>>>>> d77c76370d92ba6a337d220a24d5d06b1449322f
 
                 <!-- Grid column: Author Info -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
