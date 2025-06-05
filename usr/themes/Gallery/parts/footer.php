@@ -24,23 +24,6 @@
                         The author and copyright holder of this website is Shichen Wanyan, the webmaster of Aurorum.co.
                     </p>
                 </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <!-- Grid column: Page Links -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Page Links</h6>
-                    <p><i class="fas fa-home mr-3"></i> <a target="_blank" class="text-white" href="index.html">Homepage</a></p>
-                    <p><i class="fa-solid fa-scroll"></i> <a target="_blank" class="text-white" href="essay.html">MP1 essay</a></p>
-                    <p><i class="fa-solid fa-circle-info"></i> <a target="_blank" class="text-white" href="credits.html">References/Credits</a></p>
-                    <p><i class="fa-solid fa-sitemap"></i> <a target="_blank" class="text-white" href="sitemap.html">Sitemap</a></p>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <hr class="w-100 clearfix d-md-none" />
 
                 <!-- Grid column: Author Info -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -49,18 +32,6 @@
                     <p><i class="fas fa-envelope mr-3"></i> aurorum@uw.edu </p>
                 </div>
 
-                 <!-- Grid column: About this website -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">About this organization </h6>
-                    <p>
-                        This club focuses on analyzing photography through engineers' approaches.<br>
-                        The club president is Shichen Wanyan.<br>
-                        Our new project Gallery gathers various images for our users to search for. The massive<br>
-                        amount of picture resources can become your powerful tool to obtain pictures by simply<br>
-                        searching for the keywords you want. Enjoy your wonderful journey using Gallery!
-                    </p>
-                </div>
-                
                 <!-- Grid column: Club Info-->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Organization</h6>
@@ -69,7 +40,23 @@
                     <p><a target="_blank" class="text-white" href="https://github.com/en-pho/gallery"> ENPHO Gallery Github Repo </a></p>
                     <p><a target="_blank" class="text-white" href="https://enpho.aurorum.co/demo/gallery/"> ENPHO Gallery Demo </a></p>
                     <p><a target="_blank" class="text-white" href="https://open.aurorum.co/t/enpho"> ENPHO Forum </a></p>
+                    <p><a target="_blank" class="text-white" 
+                        href="https://open.aurorum.co/oauth/authorize?client_id=zvY3aUnlKjfM9mli7pkGE1FsJu5ssI&response_type=code&redirect_uri=https%3A%2F%2Fenpho.aurorum.co%2Fdemo%2Fgitclone.php&scope=user.read&state=db096b23dec6def0">
+                            Run Git Clone for ENPHO Gallery Demo </a></p>
+                    <p><a target="_blank" class="text-white" href="https://myenpho.aurorum.co/index.php?code=8316d7e94191aaf5879b2edee3cffbf58dee3710&state=75e264d128771a0c"> ENPHO Website Collection </a></p>
                     <p><i class="fas fa-envelope mr-3"></i> aurorum@uw.edu </p>
+                </div>
+
+                 <!-- Grid column: About this website -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">About this organization </h6>
+                    <p align="justify">
+                        This club focuses on analyzing photography through engineers' approaches.<br>
+                        The club president is Shichen Wanyan.
+                        Our new project Gallery gathers various images for our users to search for. The massive
+                        amount of picture resources can become your powerful tool to obtain pictures by simply
+                        searching for the keywords you want. Enjoy your wonderful journey using Gallery!
+                    </p>
                 </div>
                 
             </div>
