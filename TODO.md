@@ -16,3 +16,4 @@
 ## Backend
 
 1. Improve **OAuth** logic.
+2. Work on Flask RESTful **API** that integrates RAM
